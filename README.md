@@ -39,8 +39,12 @@ Business-analysis/
 ├── report_generator.py     # PDF and Excel report generation
 ├── ui_components.py        # Reusable Streamlit UI components
 ├── utils.py                # Formatting helpers and utilities
+├── sample_data.csv         # Ready-to-use 3-year demo dataset
 ├── requirements.txt        # Python dependencies
 ├── .env.example            # Environment variables template
+├── LICENSE                 # MIT licence
+├── .streamlit/
+│   └── config.toml         # Streamlit theme & server settings
 └── assets/
     └── style.css           # Custom dark-theme CSS
 ```
@@ -105,6 +109,17 @@ streamlit run app.py
 
 Open [http://localhost:8501](http://localhost:8501) in your browser.
 
+### 6. Deploy to Streamlit Cloud (optional)
+
+1. Push the repo to GitHub (already done).
+2. Go to [share.streamlit.io](https://share.streamlit.io) → **New app**.
+3. Select this repo, branch `main`, and set **Main file path** to `app.py`.
+4. Under **Advanced settings → Secrets**, add:
+   ```toml
+   GEMINI_API_KEY = "your_actual_api_key_here"
+   ```
+5. Click **Deploy** — the app will be live in ~60 seconds.
+
 ---
 
 ## 📂 Supported Data Formats
@@ -120,6 +135,8 @@ Open [http://localhost:8501](http://localhost:8501) in your browser.
 - A revenue column (e.g. `revenue`, `sales`, `income`)
 - An expense column (e.g. `expenses`, `cost`, `costs`)
 - A profit column (optional — calculated automatically if missing)
+
+> **🚀 Try it instantly:** upload the included `sample_data.csv` (576 rows, 9 columns — 3 years of multi-product, multi-region business data with injected anomalies).
 
 ---
 
