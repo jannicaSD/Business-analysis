@@ -2,3 +2,12 @@ data/
 cache/
 pandasai.log
 __pycache__
+.env
+*.pyc
+*.pyo
+.DS_Store
+venv/
+.venv/
+*.egg-info/
+dist/
+build/

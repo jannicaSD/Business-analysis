@@ -1,3 +1,20 @@
-openai
-pandasai==1.4.10
-streamlit
+# Core
+streamlit>=1.32.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Visualization
+plotly>=5.18.0
+
+# AI / Gemini
+google-genai>=1.0.0
+
+# Reporting
+reportlab>=4.1.0
+openpyxl>=3.1.0
+
+# Environment
+python-dotenv>=1.0.0
